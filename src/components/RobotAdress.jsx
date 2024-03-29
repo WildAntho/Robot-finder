@@ -1,10 +1,12 @@
+import "./robotAdress.css"
+
 function RobotAdress({ robotAddress }) {
     return (
-        <>
-            <p>{robotAddress.suite}</p>
-            <p>{robotAddress.zipcode}</p>
-            <p>{robotAddress.city}</p>
-        </>
+        <section>
+            <p className="adress">{robotAddress.suite}</p>
+            <p className="adress">{robotAddress.zipcode}</p>
+            <p className="adress">{robotAddress.city}</p>
+        </section>
     )
 
 }

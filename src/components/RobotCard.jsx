@@ -1,28 +1,32 @@
 import { useState } from "react"
 import RobotAdress from "./RobotAdress"
 
+import "./robotCard.css"
+
 function RobotCard({ Robots }) {
 
     // Initialisation du State
+    
     const [display, setDisplay] = useState(false)
 
     // Comportements
+
     const handleClick = () => {
         setDisplay(!display);
     }
 
     return (
-        <>
+        <div className="robotCard">
             <figure>
                 <img src={`https://robohash.org/${Robots.id}?set=set2`} alt="" />
             </figure>
-            <h2>{Robots.name}</h2>
-            <h3>{Robots.phone}</h3>
-            <h4>{Robots.email}</h4>
-            <h4>{Robots.website}</h4>
+            <h1 className="name">{Robots.name}</h1>
+            <p className="text">{Robots.phone}</p>
+            <p className="text">{Robots.email}</p>
+            <p className="text">{Robots.website}</p>
             {display ? <RobotAdress robotAddress={Robots.address} /> : false}
-            <button onClick={handleClick}>Show Adress</button>
-        </>
+            <button className="showButton" onClick={handleClick}>{display ? "Hide Adress" : "Show Adress"}</button>
+        </div>
     )
 }
 
