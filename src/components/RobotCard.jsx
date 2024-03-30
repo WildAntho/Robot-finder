@@ -6,11 +6,9 @@ import "./robotCard.css"
 function RobotCard({ Robots }) {
 
     // Initialisation du State
-    
     const [display, setDisplay] = useState(false)
 
     // Comportements
-
     const handleClick = () => {
         setDisplay(!display);
     }
