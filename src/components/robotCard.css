@@ -1,4 +1,5 @@
 .robotCard {
+    position: relative;
     border-style: solid;
     border-color: black;
     border-radius: 30px;
@@ -32,4 +33,10 @@
 
 .showButton:hover {
     background-color: rgb(85, 85, 85);
+}
+
+.thumbsButtons {
+    position: absolute;
+    top: 15px;
+    right: 15px;
 }

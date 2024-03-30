@@ -1,0 +1,72 @@
+.thumbsButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.likebutton-container {
+    border: solid;
+    border-width: thin;
+    border-radius: 45px 0 0 45px;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100px;
+    background-color: rgb(203, 203, 203);
+    border-color: rgb(175, 175, 175);
+    cursor: pointer;
+}
+
+.likebutton-container:hover {
+    background-color: rgb(190, 190, 190);
+}
+
+.likebutton-container p {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.likeButton {
+    height: 20px;
+    width: 20px;
+    margin: 5px 10px;
+}
+
+.dislikeButton {
+    border: solid;
+    border-width: thin;
+    border-radius: 0 45px 45px 0;
+    height: 20px;
+    width: 20px;
+    padding: 5px 10px;
+    background-color: rgb(203, 203, 203);
+    border-color: rgb(175, 175, 175);
+    cursor: pointer;
+}
+
+.dislikeButton:hover {
+    background-color: rgb(190, 190, 190);
+}
+
+.yes {
+    height: 20px;
+    width: 20px;
+    margin: 5px 10px;
+    cursor: pointer;
+    color: green;
+}
+
+.none {
+    /* border: solid;
+    border-width: thin;
+    border-radius: 0 45px 45px 0;
+    height: 20px;
+    width: 20px;
+    padding: 5px 10px;
+    background-color: rgb(203, 203, 203);
+    border-color: rgb(175, 175, 175);
+    cursor: pointer; */
+    color: #d8130c;
+}

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import RobotAdress from "./RobotAdress"
+import LikeButtons from "./LikeButtons"
 
 import "./robotCard.css"
 
@@ -15,6 +16,7 @@ function RobotCard({ Robots }) {
 
     return (
         <div className="robotCard">
+            <LikeButtons />
             <figure>
                 <img src={`https://robohash.org/${Robots.id}?set=set2`} alt="" />
             </figure>

@@ -7,6 +7,7 @@ import NavBar from './components/NavBar';
 import { IoSearchOutline } from "react-icons/io5";
 import { IoCloseOutline } from "react-icons/io5";
 import { IoLogoGameControllerB } from "react-icons/io";
+import { FaMicrophone } from "react-icons/fa6";
 
 function App() {
 
@@ -56,6 +57,7 @@ function App() {
           {input !== "" && <IoCloseOutline className='closeIcon' onClick={handleDelete} />}
         </div>
         <button title='Search' className='valide'><IoSearchOutline className='iconSearchWhite' /></button>
+        <button className='microButton'><FaMicrophone className='micro' /></button>
       </form>
       <div className='cardRobots'>
         {newRobots.map(function (robot) {
