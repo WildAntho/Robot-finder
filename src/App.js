@@ -38,7 +38,7 @@ function App() {
   let newRobots = Robots.filter((robot) => robot.name.toLowerCase().includes(input.toLowerCase()));
 
   return (
-    <div className="App" onClick={handleToggle}>
+    <div className="App">
       <div className='burgerIcon' onClick={handleToggle}>
         <div className={line1}></div>
         <div className={line2}></div>
