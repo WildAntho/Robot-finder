@@ -9,20 +9,19 @@ function LikeButtons() {
     const [like, setLike] = useState('likeButton');
     const [dislike, setDislike] = useState('dislikeButton');
     const [count, setCount] = useState(0);
-    console.log(like);
-    console.log(dislike);
-    console.log(count);
 
     //Comportements
     const handleToggle = () => {
         dislike === 'dislikeButton' ? setDislike('dislikeButton none') : setDislike('dislikeButton')
         count > 0 && dislike === 'dislikeButton' && setCount(count - 1);
+        count > 0 && dislike === 'dislikeButton none' && setCount(count + 1)
         setLike('likeButton')
     }
 
     const handleClick = () => {
         setCount(count + 1);
         like === 'like' ? setLike('like yes') : setLike('like yes');
+        dislike === 'dislikeButton none' && setDislike('dislikeButton')
     }
 
 

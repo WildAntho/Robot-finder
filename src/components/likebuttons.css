@@ -12,14 +12,14 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 100px;
-    background-color: rgb(203, 203, 203);
+    width: 80px;
+    background-color: rgb(209, 209, 209);
     border-color: rgb(175, 175, 175);
     cursor: pointer;
 }
 
 .likebutton-container:hover {
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(200, 200, 200);
 }
 
 .likebutton-container p {
@@ -41,13 +41,13 @@
     height: 20px;
     width: 20px;
     padding: 5px 10px;
-    background-color: rgb(203, 203, 203);
+    background-color: rgb(209, 209, 209);
     border-color: rgb(175, 175, 175);
     cursor: pointer;
 }
 
 .dislikeButton:hover {
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(200, 200, 200);
 }
 
 .yes {

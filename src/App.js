@@ -45,7 +45,7 @@ function App() {
         <div className={line2}></div>
         <div className={line3}></div>
       </div>
-      <NavBar toggle={toggle} />
+      <NavBar toggle={toggle} setToggle={setToggle} />
       <div className='mainTitle'>
         <IoLogoGameControllerB className='controllerIcon' />
         <h1 className='titleRobot'><span className='robotColor'>Robot</span> Finder</h1>

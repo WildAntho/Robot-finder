@@ -49,9 +49,13 @@
 }
 
 .mainTitle {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(29, 29, 29);
+  z-index: 5;
 }
 
 .controllerIcon {
@@ -70,11 +74,16 @@
 }
 
 .search {
+  position: sticky;
+  top: 81px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 10px;
+  padding-bottom: 15px;
   height: 2.5rem;
+  z-index: 5;
+  background-color: rgb(29, 29, 29);
 }
 
 .microButton {
@@ -102,9 +111,10 @@
 }
 
 .input-wrapper {
+  position: relative;
   background-color: rgb(29, 29, 29);
   border: solid;
-  border-color: rgb(91, 91, 91);
+  border-color: rgb(91, 91, 91, .5);
   height: 95%;
   width: 25rem;
   display: flex;
@@ -115,15 +125,19 @@
 }
 
 .iconSearch {
-  margin: 0;
-  padding: 0 10px 0 20px;
+  position: absolute;
+  left: 0;
+  margin-right: 10px;
+  padding: 0 7px 0 20px;
   transform: scale(1.5);
   color: whitesmoke;
   opacity: 0.3;
 }
 
 .closeIcon {
-  transform: scale(2.4);
+  position: absolute;
+  right: 0;
+  transform: scale(2);
   color: whitesmoke;
   opacity: 0.3;
   padding-right: 10px;
@@ -132,7 +146,7 @@
 
 .closeIcon:hover {
   opacity: 0.7;
-  transform: scale(2.5);
+  transform: scale(2.1);
 }
 
 .iconSearchWhite {
@@ -146,9 +160,9 @@
 }
 
 .input {
-  font-size: 15px;
-  padding: 6px 15px 6px 7px;
-  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 15px 0 55px;
+  /* border-radius: 45px 0 0 45px; */
   border-width: 1px;
   border-style: none;
   background-color: transparent;
@@ -158,7 +172,10 @@
 }
 
 .input:focus {
-  outline: none;
+  outline: solid;
+  outline-width: thin;
+  outline-color: rgba(0, 174, 255, 0.7);
+  border-radius: 45px 0 0 45px;
 }
 
 .valide {
@@ -174,7 +191,7 @@
   color: whitesmoke;
   cursor: pointer;
   border: solid;
-  border-color: rgb(91, 91, 91);
+  border-color: rgb(91, 91, 91, .5);
   border-width: thin;
 }
 
